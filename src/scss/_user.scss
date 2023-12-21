@@ -1,0 +1,12 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+@font-face {
+	font-family: 'RProximaNova';
+	src: url(‘./assets/fonts/ProximaNova-Regular.woff2’) format(‘woff2’),
+		url(‘./assets/fonts/ProximaNova-Regular.ttf’) format(‘truetype’)
+}
+body {
+	font-family: 'Proxima Nova';
+}

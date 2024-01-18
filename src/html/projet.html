@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+  
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    
+    <!-- Title -->
+    <title>Gîte le Mur d'Abeilles</title>
+  </head>
+  
+  <body class="bg-primary">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light p-0 shadow" style="background-color: #ffd88a;">
+      <div class="container-fluid">
+    
+        <!-- Brand -->
+        <a class="navbar-brand d-flex justify-content-md-center" href="./index.html" style="max-width: 13%;">
+
+          <!-- Brand -->
+          <img src="./assets/img/logo_gite.png" alt="logo Gîte le Mur d'Abeilles, hébergement dans les groges du verdon, à Rougon, dans les Alpes de haute provence" class="img-fluid w-md-50">
+        
+        </a>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-center link-secondary" id="navbarLandings"  href="./index.html" aria-haspopup="true" aria-expanded="false" data-scroll='{"offset": 0}' style="">
+                Retour à la page principale
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+
+     <!-- FAQ (Accordion) -->
+    <section class="container p-0 d-flex justify-content-center ">
+        <img src="assets/img/projet.jpg" alt="" class="img-fluid">
+    </section>
+    <!-- FOOTER -->
+    <footer class="pt-5 pb-5 bg-secondary position-absolute position-md-relative bottom-0 w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+    
+            <!-- Social -->
+            <!-- <ul class="list-unstyled list-inline list-social mb-5 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="icone instagram Gîte le Mur d'Abeilles, entreprise de conseil, formation et télémédecine">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="icone linkedin Gîte le Mur d'Abeilles, entreprise de conseil, formation et télémédecine">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="icone twitter Gîte le Mur d'Abeilles, entreprise de conseil, formation et télémédecine">
+                </a>
+              </li>
+            </ul> -->
+            
+              
+            <!-- Brand -->
+        
+            <img src="./assets/img/logo_gite.png" alt="logo du gîte le Mur d'Abeille" class="img-fluid w-25 w-md-50">
+              
+          </div>
+          <div
+            class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0"
+          >
+            <div id="footer-links" class="row">
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a
+                    href="#menu-links"
+                    class="d-block text-center text-primary text-uppercase fs-lg dropdown-toggle d-lg-none py-2"
+                    data-bs-toggle="collapse"
+                    >Menu</a
+                  >
+                </h6>
+                <div
+                  id="menu-links"
+                  class="collapse d-lg-block"
+                  data-bs-parent="#footer-links"
+                  >
+                  <ul class="nav navLink flex-column text-center text-md-start pb-lg-1 mb-lg-3">
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link d-inline-block px-0 pt-1 pb-2"
+                      data-scroll='{"offset": 0}'>Retour à la page principale</a
+                      >
+                    </li>
+                  </ul>   
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a
+                    href="#policy-links"
+                    class="d-block text-center text-uppercase fs-lg dropdown-toggle d-lg-none py-2"
+                    data-bs-toggle="collapse"
+                    >Conditions et Politique</a
+                  >
+                </h6>
+                <div
+                  id="policy-links"
+                  class="collapse d-lg-block"
+                  data-bs-parent="#footer-links"
+                  >
+                  
+                  <ul class="nav navLink flex-column text-center text-md-start mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a href="cgu.html" class="nav-link d-inline-block px-0 pt-1 pb-2"
+                        >Conditions d'utilisation</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="rgpd.html" class="nav-link d-inline-block px-0 pt-1 pb-2"
+                        >Informations RGPD</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <div class="pt-2">
+                  <div class="nav flex-column align-items-center">
+                    <a href="javascript:openAxeptioCookies()" class="nav-link d-inline-block px-0 pt-1 pb-2">Gestion des cookies</a>
+                  </div>
+                  <div class="nav flex-column align-items-center">
+                    <a href="mailto:murabeille@orange.fr" class="nav-link d-inline-block px-0 pt-1 pb-2">
+                      murabeille@orange.fr
+                    </a>
+                  </div>
+                  <div class="nav flex-column align-items-center align-items-md-start">
+                    <a href="tel:0492313809" class="nav-link d-inline-block px-0 pt-1 pb-2">
+                      04.92.31.38.09
+                    </a>
+                  </div>
+                  <div class="nav flex-column align-items-center">
+                    <a href="https://flaticon.com" class="nav-link d-inline-block px-0 pt-1 pb-2" target="_blank">Crédits Icônes : flaticon.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228488885-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-228488885-1');
+    </script>
+
+  </body>
+</html>

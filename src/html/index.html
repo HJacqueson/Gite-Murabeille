@@ -301,7 +301,13 @@
         </div> <!-- / .row -->
         <!-- Text -->
         <p class="mt-7 mx-md-7 text-secondary" style="text-align: justify;" data-aos="fade-up" data-aos-delay="300">
-          Au cœur du village de Rougon, maison indépendante où vous serez accueillis dans une ambiance chaleureuse et conviviale. Le gîte peut recevoir jusqu'à 37 personnes et dispose de tout le confort nécessaire à un agréable séjour. Terrasse couverte et local à vélos/VTT à votre disposition. Au rez-de-chaussée, une chambre familiale pour 5 personnes, accessible aux personnes en situation de handicap, kitchenette à dispo. Au 1er étage, une grande salle à manger avec poêle à bois, un petit espace cuisine en gestion libre, 2 chambres de 4 personnes avec salle d'eau/wc privatifs. Au 2ème étage, 2 chambres de 4 personnes avec salle d'eau/wc privatifs et 2 dortoirs de 8 couchages chacun disposant de blocs sanitaires (3 douches, wc, lavabos). Lave-linge, sèche linge disponible sur demande. Le gîte dans sa formule demi-pension propose une cuisine familiale et de saison. Les draps sont fournis. Taxe de séjour non incluse. Supplément de 2.50 €/pers. en gestion libre.
+          Au cœur du village de Rougon, maison indépendante où vous serez accueillis dans une ambiance chaleureuse et conviviale. 
+          Le gîte peut recevoir jusqu'à 18 personnes et dispose de tout le confort nécessaire à un agréable séjour. 
+          Terrasse couverte et local à vélos/VTT à votre disposition. 
+          Au rez-de-chaussée, une chambre familiale, accessible aux personnes en situation de handicap, kitchenette à dispo. 
+          Au 1er étage, une grande salle à manger avec poêle à bois, un petit espace cuisine en gestion libre, 2 chambres avec salle d'eau/wc privatifs. 
+          Au 2ème étage, 2 chambres avec salle d'eau/wc privatifs et 2 dortoirs disposant de blocs sanitaires (3 douches, wc, lavabos). Lave-linge, sèche-linge disponible sur demande. 
+          Le gîte dans sa formule demi-pension propose une cuisine familiale et de saison. Les draps sont fournis. Taxe de séjour non incluse. Supplément de 2.50 €/pers. en gestion libre.
         </p>
       </div> <!-- / .container -->
     </section>
@@ -619,19 +625,21 @@
             <form data-aos="fade-up" data-aos-delay="800" id="contact-form">
               <input type="hidden" name="contact_number">
               <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                   <div class="form-group mb-5">
 
                     <!-- Label -->
                     <label class="form-label text-secondary" for="contactName">
                       Vos Nom et Prénom
                     </label>
-
                     <!-- Input -->
-                    <input class="form-control" id="contactName" type="text" placeholder="Nom et Prénom" name="user_name">
+                    <input class="form-control" id="contactName" type="text" placeholder="Nom et Prénom" name="user_name" required>
+                    <div class="invalid-feedback">Veuillez entrer vos nom et prénom.</div>
 
                   </div>
                 </div>
+              </div> <!-- / .row -->
+              <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="form-group mb-5">
 
@@ -641,7 +649,24 @@
                     </label>
 
                     <!-- Input -->
-                    <input class="form-control" id="contactEmail" type="email" placeholder="bonjour@domaine.com" name="user_mail">
+                    <input class="form-control" id="contactEmail" type="email" placeholder="bonjour@domaine.com" name="user_mail" required>
+                    <div class="invalid-feedback">Veuillez entrer une adresse mail.</div>
+
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+
+                    <!-- Label -->
+                    <label class="form-label text-secondary" for="contactPhone">
+                      Votre numéro de téléphone
+                    </label>
+
+                    <!-- Input -->
+                    <input class="form-control" id="contactPhone" type="phone" placeholder="+33_ __ __ __ __" name="user_phone" required>
+                    <div class="invalid-feedback">Veuillez entrer un numéro de téléphone valide.</div>
+
 
                   </div>
                 </div>
@@ -651,12 +676,13 @@
                   <div class="form-group mb-7 mb-md-9">
 
                     <!-- Label -->
-                    <label class="form-label text-secondary" for="contactMessage">
+                    <label class="form-label text-secondary" for="contactMessage" required>
                       Votre Message
                     </label>
 
                     <!-- Input -->
-                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Écrivez ici !" name="user_message"></textarea>
+                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Écrivez ici !" name="user_message" required></textarea>
+                    <div class="invalid-feedback">Veuillez entrer votre message.</div>
 
                   </div>
                 </div>
